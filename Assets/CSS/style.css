@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+/*ESTILOS GERAIS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+/*BODY*/
+body {
+    font-family: font-mc;
+    max-width: 1920px;
+    margin: auto;
+    background-color: white;
+}
+/*HEADER*/
+#logo {
+    display: inline-block;
+}
+#logo img {
+    width: 80%;
+    margin-left: 10%;
+}
+nav {
+    display: flex;
+    background-color: #073674;
+    flex-direction: column;
+}
+nav ul {
+    font-size: 28px;    
+    margin-top: auto;
+    margin-right: 1%;
+    margin-inline-start: auto;
+    color: white;
+}
+nav ul li {
+    display: inline-block;
+    margin: 15px -4px;
+    border: solid;
+    border-color: #073674 #ffffff61 #073674 #073674;
+    padding: 0 10px; 
+}
+nav ul #no-border {
+    border-color: #073674;
+}
+
+/*PÁGINA INICIAL*/
+main .container {
+    background-color: #004AAD;
+    padding: 7% 0;
+}
+main .container .sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+main .container .sobre h1 {
+    font-size: 40px;
+    max-width: 90%;
+    text-align: center;
+}
+main .container .foto-mecanico img {
+    width: 350px;
+}
+
+/* seção 1 */
+section {
+    padding: 2% 0%;
+}
+section h2 {
+    color: #004AAD;
+    text-align: center;
+    margin: 4%;
+}
+section #prop {
+    background-color: #7ed957;
+    color: white;
+    max-width: 60%;
+    margin: auto;
+    padding: 9px;
+    margin-top: 3%;
+    border-radius: 10px;
+    box-shadow: #999 4px 2px 4px 2px
+}
+section #container {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    align-items: center;
+}
+section #container .contato {
+    width: 35%;
+    border: solid #004AAD;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+section p {
+    text-align: center;
+    margin: 3%;
+    font-size: 16px;
+}
+
+/* seção 2 */
+#section2 {
+    background-color: #004AAD;
+    padding-top: 1%;
+}
+#section2 .container .info #p2 {
+    border: solid;
+    border-color: red #004AAD;
+    border-radius: 10px;
+    padding: 10px;
+    max-width: 60%;
+    margin: auto;
+    color: red;
+    font-size: 24px;
+    margin-top: 3%;
+    font-weight: bold;
+}
+#section2 .container .info h2 {
+    color: white;
+    margin: 4%;
+}
+#section2 .container .info p {
+    color: white;
+    font-size: 18px;
+}
+#section2 #img {
+    padding: 2% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#section2 #img img {
+    width: 280px;
+}
+#section2 #img p {
+    color: white;
+    font-size: 18px;
+    max-width: 60%;
+    text-align: center;
+}
+
+/*FOOTER*/
+footer {
+    background-color: #073674;
+    padding: 3%;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+}
+footer .formulario {
+    background-color: white;
+    border-radius: 10px;
+    padding: 13px;
+    max-width: 200px;
+    text-align: center;
+    margin: auto;
+    margin-top: 1%;
+}
+footer .sos p {
+    color: white;
+}
+
+/*EXTRAS*/
+.nav {
+    color: white;
+}
+@font-face {
+    font-family: font-mc;
+    src: url(../font/JosefinSans-VariableFont_wght.ttf);
+}
+#freepik {
+    color: white;
+}
+/*@MEDIA*/
+@media only screen and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        padding: 1%
+    }
+    main .container .sobre {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    main .container .sobre h1 {
+        max-width: 40%;
+        text-align: end;
+    }
+    main .container .foto-mecanico img {
+        width: 90%;
+    }
+    section #container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: initial;
+    }
+    section #prop {
+        max-width: 45%;
+    }
+    section #container .contato {
+        width: 15%;
+    }
+    section p {
+        margin: 3% 0;
+    }
+    #section2 .container .info #p2 {
+        max-width: 30%;
+    }
+    #section2 #img {
+        flex-direction: row;
+    }
+    #section2 #img p {
+        max-width: 40%;
+        text-align: left;
+    }
+    footer {
+        padding: 1%;
+    }
+    footer .formulario {
+        max-width: 400px;
+    }
+
+}
